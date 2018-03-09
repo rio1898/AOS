@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lwh.rioresearch.UICategory.ProgressRoundButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <com.lwh.rioresearch.UICategory.AnimaProgressBar
+            android:id="@+id/common_progress"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            app:progress="0"
+            app:progress_bg_color="#fffafa"
+            app:progress_color="@android:color/transparent"
+            app:progress_height="0dp"
+            app:progress_masker="@drawable/wminutes_progress"
+            app:progress_padding_left_right="3dp"
+            app:progress_radius="4dp"></com.lwh.rioresearch.UICategory.AnimaProgressBar>
+
+
+        <com.xiaochen.progressroundbutton.AnimDownloadProgressButton
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            app:progressbtn_text_size="25"
+            android:id="@+id/anim_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:progressbtn_backgroud_color="@android:color/holo_orange_light"
+            app:progressbtn_backgroud_second_color="@android:color/darker_gray"/>
+
+        <com.xiaochen.progressroundbutton.AnimDownloadProgressButton
+            android:id="@+id/anim_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            app:progressbtn_backgroud_color="@android:color/holo_green_dark"
+            app:progressbtn_backgroud_second_color="@android:color/darker_gray"
+            app:progressbtn_enable_gradient="true"
+            app:progressbtn_enable_press="true"/>
+
+        <com.xiaochen.progressroundbutton.AnimButtonLayout
+            android:id="@+id/anim_btn3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            app:progressbtn_backgroud_color="@android:color/holo_blue_dark"
+            app:progressbtn_backgroud_second_color="@android:color/darker_gray"
+            app:progressbtn_enable_gradient="true"
+            app:progressbtn_enable_press="true"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:text="reset"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="radius:"/>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autoLink="web"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:scaleType="center"
+            android:src="@mipmap/img1"/>
+
+
+    </LinearLayout>
+</ScrollView>

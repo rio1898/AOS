@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <declare-styleable name="AnimaProgressBar">
+        <!--进度颜色-->
+        <attr name="progress_height" format="dimension" />
+        <!--左右padding-->
+        <attr name="progress_padding_left_right" format="dimension" />
+        <!--圆角大小-->
+        <attr name="progress_radius" format="dimension" />
+        <!--进度颜色-->
+        <attr name="progress_color" format="color" />
+        <!--背景颜色-->
+        <attr name="progress_bg_color" format="color" />
+        <!--进度-->
+        <attr name="progress" format="float" />
+        <!--蒙板-->
+        <attr name="progress_masker" format="integer" />
+
+    </declare-styleable>
+</resources>
